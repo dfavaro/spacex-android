@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spacex_nav_graph"
+    app:startDestination="@id/launchesFragment">
+
+    <fragment
+        android:id="@+id/launchesFragment"
+        android:name="com.danielefavaro.spacex.main.ui.LaunchesFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/launches_fragment">
+        <action
+            android:id="@+id/action_launchesFragment_to_launchDetailFragment"
+            app:destination="@id/launchDetailFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/launchDetailFragment"
+        android:name="com.danielefavaro.spacex.main.ui.LaunchDetailFragment"
+        android:label="launch_detail_fragment"
+        tools:layout="@layout/launch_detail_fragment" />
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="generic_error">Generic error</string>
+    <string name="network_unavailable">Network error</string>
+</resources>

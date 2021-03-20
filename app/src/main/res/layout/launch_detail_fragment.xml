@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.LaunchDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/bottomsheet_min_height">
+
+        <View
+            android:id="@+id/anchorView"
+            android:layout_width="@dimen/bottomsheet_anchor_view_width"
+            android:layout_height="@dimen/bottomsheet_anchor_view_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/bottomsheet_anchor_rounded_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/launchImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_top"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/rocketName"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/anchorView"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintWidth_max="@dimen/badge_image_max_width"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <TextView
+            android:id="@+id/rocketName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Rocket name" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Date" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Details" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
