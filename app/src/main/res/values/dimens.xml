@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_content_padding_start">16dp</dimen>
+    <dimen name="card_content_padding_end">16dp</dimen>
+    <dimen name="card_content_padding_top">16dp</dimen>
+    <dimen name="card_content_padding_bottom">16dp</dimen>
+    <dimen name="card_content_padding">16dp</dimen>
+    <dimen name="card_margin_start">16dp</dimen>
+    <dimen name="card_margin_end">16dp</dimen>
+    <dimen name="card_margin_top">8dp</dimen>
+    <dimen name="card_margin_bottom">8dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_badge_image_max_width">150dp</dimen>
+
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_end">16dp</dimen>
+    <dimen name="margin_start">16dp</dimen>
+    <dimen name="badge_image_max_width">250dp</dimen>
+
+    <dimen name="bottomsheet_min_height">300dp</dimen>
+    <dimen name="bottomsheet_anchor_view_width">40dp</dimen>
+    <dimen name="bottomsheet_anchor_view_height">4dp</dimen>
+</resources>
